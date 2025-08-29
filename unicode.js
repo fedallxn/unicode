@@ -86,15 +86,15 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); // 67
+let thirdCodePoint = inputString1.charCodeAt(2); // 100
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(72) + String.fromCharCode(101) + String.fromCharCode(108) + String.fromCharCode(108); // "Hell"
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let swappedString = String.fromCharCode(inputString2.charCodeAt(5)) + inputString2.slice(1,5) + String.fromCharCode(inputString2.charCodeAt(0)); // "hauncL"
 
 // Log all results
 console.log({
@@ -103,3 +103,19 @@ console.log({
   wordFromCodePoints,
   swappedString,
 });
+
+//Practice Problem #1: Exercise #1
+let myCat = "Zelda";
+let sumCodePoints = myCat.charCodeAt(1) + myCat.charCodeAt(2) + myCat.charCodeAt(3); // "e" = 101, "l" = 108, "d" = 100
+console.log(sumCodePoints); // 101 + 108 + 100 = 309
+
+//Practice Problem #1: Exercise #2
+let firstLetter = String.fromCharCode(70); // 70 = "F"
+let secondLetter = String.fromCharCode(78); // 78 = "N"
+let combinedString = firstLetter + secondLetter;
+console.log(combinedString); // FN
+
+//Practice Problem #1: Exercise #3
+let myOtherCat = "Mouse";
+let codePointDifference = Math.abs(myOtherCat.charCodeAt(0) - myOtherCat.charCodeAt(3)); // "M" = 77 and "s" = 115
+console.log(codePointDifference);
