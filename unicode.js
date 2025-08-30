@@ -118,4 +118,4 @@ console.log(combinedString); // FN
 //Practice Problem #1: Exercise #3
 let myOtherCat = "Mouse";
 let codePointDifference = Math.abs(myOtherCat.charCodeAt(0) - myOtherCat.charCodeAt(3)); // "M" = 77 and "s" = 115
-console.log(codePointDifference);
+console.log(codePointDifference); // | 77 - 115 | = 38
